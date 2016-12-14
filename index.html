@@ -1,9 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title> Metronet</title>
+  <title>Thermal Green Solutions</title>
   <meta charset="utf-8">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!--general style css for entire page-->
+  <link rel="stylesheet" href="./css/generalstyle.css">
+  <!--css for banner menue drop downs-->
+  <link rel="stylesheet" href="./css/dropdown.css">
+  <!--jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 </head>
 <body>
+
+<div class="container" id="banner">
+  <div class="row" width="100%">
+
+    <!--logo here, place holder text for now-->
+    <div class="col-xs-3" id="banner_logo">
+      <h1 style="border-style:solid; padding:5px;">TGS Logo</h1>
+    </div>
+
+    <!--drop buttons for navigation.  centered because it looks nicer-->
+    <center>
+      <div class="col-xs-2 dropdown">
+        <button class="dropbtn">About Us</button>
+        <div class="dropdown-content">
+          <a href="#">Our Mission</a>
+          <a href="#">Our Story</a>
+          <a href="#">Meet the Team</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="col-xs-2 dropdown">
+        <button class="dropbtn">Products</button>
+        <div onclick="menu_click(this.id)" class="dropdown-content">
+          <a href="#">TGS 1</a>
+          <a href="#">Become a Beta Tester</a>
+        </div>
+      </div>
+
+      <div class="col-xs-2 dropdown">
+        <button class="dropbtn"><a href="#">Estimate Your Savings</a></button>
+      </div>
+
+      <div class="col-xs-2 dropdown">
+        <button class="dropbtn"><a href="#">FAQs</a></button>
+      </div>
+    </center>
+
+      <!--search button, maybe another drop button?-->
+      <div class="col-xs-1" id="banner_search">
+        <img src="./img/search.png" align="right" width="40px">
+      </div>
+  </div>
+</div>
+
+<div id="bodytext">
+  <h2>The first automated thermostat solution, so you can leave your
+  vacation home with peace of mind</h2>
+</div>
+
 </body>
 </html>
