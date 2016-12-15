@@ -1,0 +1,61 @@
+/*background under banner.  */
+body, html{
+  margin: 0; padding: 0; height: 100%; overflow: auto; overflow-x: hidden;
+}
+
+body{
+  background-color: white;
+}
+
+/*For handlig the bulk of the text in various content pages*/
+div#content_text{
+  font-size: 2em;
+  margin: 100px;
+  margin-top: 150px;
+}
+
+p{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/*sizing produc image on the product content pages, may need to change
+once actual image is in place*/
+.prod_img{
+  float:right;
+  margin-top:100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 40%;
+}
+
+.prod_img img{
+  width:100%;
+}
+
+/*styles for the input on beta tester page*/
+input{
+  font-size: .75em;
+  height:auto;
+}
+
+select{
+  padding: 5px;
+  font-size:.75em;
+  border: none;
+  background:none;
+}
+
+.submitbtn{
+  background-color: #8ece86;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  color: white;
+  font-size: 1em;
+  padding: 12px 16px;
+  border: none;
+}
+
+.submitbtn:hover{
+  background-color: #66a85e;
+}
