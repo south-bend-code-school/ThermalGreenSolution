@@ -1,0 +1,22 @@
+/*background under banner.  */
+body, html{
+  margin: 0; padding: 0; height: 100%; overflow: hidden;
+}
+
+body{
+  background: url('../img/background.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*text in lower body.*/
+div#bodytext {
+  position: absolute;
+  right: 0px;
+  width: 500px;
+  margin-top: 400px;
+  padding: 10px;
+  color: white;
+}
