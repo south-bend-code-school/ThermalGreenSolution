@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!--jquery cdn-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="./css/generalcontent.css">
+  <!--general style css for entire page-->
+  <link rel="stylesheet" href="./css/generalstyle.css">
+  <!--css for banner menu drop downs-->
+  <link rel="stylesheet" href="./css/dropdown.css">
+
+  </head>
+  <body>
+
+  <div class="container" id="banner">
+  <div class="row" width="100%">
+
+    <!--logo here, place holder text for now-->
+    <div class="col-xs-3" id="banner_logo">
+      <a href="./index.html" >
+        <h1 style="border-style:solid; padding:5px;">TGS Logo</h1>
+      </a>
+    </div>
+
+    <!--drop buttons for navigation.  centered because it looks nicer-->
+    <center>
+      <div class="col-xs-2 dropdown">
+        <button class="dropbtn">About Us</button>
+        <div class="dropdown-content">
+          <a class="body_link" href="./aboutus.html"  >Our Mission</a>
+          <a href="./ourstory.html" >Our Story</a>
+          <a href="./theteam.html" >Meet the Team</a>
+          <a href="./contactus.html" >Contact Us</a>
+        </div>
+      </div>
+
+      <div class="col-xs-2 dropdown">
+        <button class="dropbtn">Products</button>
+        <div onclick="menu_click(this.id)" class="dropdown-content">
+          <a href="./tgs1.html" >TGS 1</a>
+          <a href="./betatester.html" >Become a Beta Tester</a>
+        </div>
+      </div>
+
+      <div class="col-xs-2 dropdown">
+        <button class="dropbtn"><a href="./savings.html" >
+          Estimate Your Savings</a></button>
+      </div>
+
+      <div class="col-xs-2 dropdown">
+        <button class="dropbtn"><a href="./faqs.html" >FAQs</a></button>
+      </div>
+    </center>
+
+      <!--search button, maybe another drop button?-->
+      <div class="col-xs-1" id="banner_search">
+        <img src="./img/search.png" align="right" width="40px">
+      </div>
+  </div>
+  </div>
+
+  <div id="content_text">
+    <h1>Meet the Team</h1>
+    <p>
+      <i><b>Founder: Bill O’Hayer</b>, MBA, CIA, CPA:</i> The inventor of this device, with a diverse background in sales, real estate finance, manufacturing finance, internal audit, and currently working in higher education administration.
+    </p>
+    <p>
+      <i><b>Team Leader: Chelsea Germeyan:</b></i> An MBA student with a background in project management and data analysis, currently focusing her studies on business plan development, inbound marketing, and strategic problem solving.
+    </p>
+    <p>
+      <i><b>CFO: David Laston:</b></i> Has a degree in chemistry and work experience as a materials engineer. Currently in the ESTEEM program.
+    </p>
+    <p>
+      <i><b>CTO: Niall Grogan:</b></i> has a degree in Electronic and Computer Engineering and has worked in the biomedical and financial industries as a software developer. Currently in the ESTEEM program.
+    </p>
+    <p>
+      <i><b>VP of Strategic Development: Mitch Cornely:</b></i>  Has a degree in chemical sciences and worked with the Cleveland Clinic in healthcare technology. Currently in the ESTEEM program.
+    </p>
+    <p>
+      <i><b>VP of Marketing (Commercial): Ralph Hayyat:</b></i>  Has a degree in biology with experience doing clinical research, and a passion for entrepreneurship. Currently in the ESTEEM program.
+    </p>
+    <p>
+      <i><b>VP of Marketing (Residential): Roy Saikali:</b></i> Has a degree in chemical sciences and work experience with a pharmaceutical company. Currently in the ESTEEM program.
+    </p>
+  </div>
+
+</body>
+</html>

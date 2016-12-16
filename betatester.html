@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!--jquery cdn-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="./css/generalcontent.css">
+  <!--general style css for entire page-->
+  <link rel="stylesheet" href="./css/generalstyle.css">
+  <!--css for banner menu drop downs-->
+  <link rel="stylesheet" href="./css/dropdown.css">
+
+  </head>
+  <body>
+
+  <div class="container" id="banner">
+  <div class="row" width="100%">
+
+    <!--logo here, place holder text for now-->
+    <div class="col-xs-3" id="banner_logo">
+      <a href="./index.html" >
+        <h1 style="border-style:solid; padding:5px;">TGS Logo</h1>
+      </a>
+    </div>
+
+    <!--drop buttons for navigation.  centered because it looks nicer-->
+    <center>
+      <div class="col-xs-2 dropdown">
+        <button class="dropbtn">About Us</button>
+        <div class="dropdown-content">
+          <a class="body_link" href="./aboutus.html"  >Our Mission</a>
+          <a href="./ourstory.html" >Our Story</a>
+          <a href="./theteam.html" >Meet the Team</a>
+          <a href="./contactus.html" >Contact Us</a>
+        </div>
+      </div>
+
+      <div class="col-xs-2 dropdown">
+        <button class="dropbtn">Products</button>
+        <div onclick="menu_click(this.id)" class="dropdown-content">
+          <a href="./tgs1.html" >TGS 1</a>
+          <a href="./betatester.html" >Become a Beta Tester</a>
+        </div>
+      </div>
+
+      <div class="col-xs-2 dropdown">
+        <button class="dropbtn"><a href="./savings.html" >
+          Estimate Your Savings</a></button>
+      </div>
+
+      <div class="col-xs-2 dropdown">
+        <button class="dropbtn"><a href="./faqs.html" >FAQs</a></button>
+      </div>
+    </center>
+
+      <!--search button, maybe another drop button?-->
+      <div class="col-xs-1" id="banner_search">
+        <img src="./img/search.png" align="right" width="40px">
+      </div>
+  </div>
+  </div>
+
+    <!--to be replaced by actual product image-->
+    <div class="prod_img">
+      <img src="./img/leafimg.png" title="place holder">
+    </div>
+
+
+  <div id="content_text">
+    <h1>Become One of the First Beta Testers!</h1>
+    <p>
+      <ul style="margin-left:50px;">
+        <li>Thermostat unit provided by TGS at no cost</li>
+        <li>Just provide us with your utility bill data while using the unit</li>
+        <li>If you stay on board the next year your subscription is free</li>
+      </ul>
+
+      <!--input data for beta tester sign up-->
+      First Name: <input type="text" name="fname"><br>
+      Last Name: <input type="text" name="lname"><br>
+      Email: <input type="text" name="email"><br><br>
+
+      <!--Add options for quantity as desired, not sure how many max-->
+      Quantity: <select name="Quanitity">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+
+      <!--button currently does nothing, this is for submitting info-->
+      <button class="submitbtn" style="margin-left:50px;">Sign Me Up!</button>
+    </p>
+  </div>
+
+</body>
+</html>
