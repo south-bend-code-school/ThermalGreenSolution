@@ -9,7 +9,8 @@ body{
 
 /*For handlig the bulk of the text in various content pages*/
 div#content_text{
-  font-size: 2em;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
   margin: 100px;
   margin-top: 150px;
 }
