@@ -25,3 +25,8 @@ div#banner_search {
 div#content{
   position:absolute; left: 0; right: 0; bottom: 0; top: 100px;
 }
+
+.logo_img{
+  margin: 1em 0 0 0;
+  width: 6em;
+}

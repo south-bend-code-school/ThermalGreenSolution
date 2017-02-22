@@ -60,3 +60,19 @@ select{
 .submitbtn:hover{
   background-color: #66a85e;
 }
+
+.bigSubmitBtn{
+  background-color: #8ece86;
+  width: 375px;
+  height: 200px;
+  box-shadow: -8px 16px 16px 0px rgba(0,0,0,0.4);
+  color: white;
+  font-size: 2em;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 25px;
+}
+
+.bigSubmitBtn:hover{
+  background-color: #66a85e;
+}
